@@ -1,17 +1,20 @@
 # DHRC Master Blueprint 3.0 Launch Website
 
-This repository contains a public-facing DHRC website prototype designed to be:
-- launch-ready for a free hosting workflow
-- easy to edit through a content file
-- suitable for GitHub + Cloudflare Pages or similar static hosting
-- safe for public publishing without exposing sensitive or confidential data
+This repository contains a public-facing DHRC website prototype built for a free-to-start launch path and GitHub-friendly deployment workflow.
 
-## Project structure
+## What is included
 
-- `src/data/siteContent.json` — main editable website content
-- `src/App.jsx` — layout and sections
-- `src/styles.css` — design and responsive styling
-- `public/favicon.svg` — branding icon
+- Public landing page and structured sections for mission, programs, approach, resources, and contact
+- Content managed from a single editable JSON file
+- Responsive design suitable for mobile and desktop
+- Deployment-ready Vite project for GitHub + static hosting
+- Clear placeholders so sensitive information is not exposed in public files
+
+## Tech stack
+
+- React
+- Vite
+- Static hosting friendly
 
 ## Quick start
 
@@ -28,24 +31,21 @@ This repository contains a public-facing DHRC website prototype designed to be:
    npm run build
    ```
 
-## Editing the website content
+## Edit the site content
 
-Update the text in `src/data/siteContent.json` to change:
-- hero messaging
-- about copy
-- program information
-- resource links
-- contact CTA text
+Update `src/data/siteContent.json` for:
+- hero text
+- mission/organisation messaging
+- program details
+- resources and FAQ content
+- contact form label text
 
-This keeps the project CMS-friendly and simple to maintain without needing a backend for the initial public launch.
-
-## Deployment options
+## Deployment
 
 ### Cloudflare Pages
-1. Push this repository to GitHub.
-2. In Cloudflare Pages, select "Create a project" and connect the repo.
-3. Use the build settings:
-   - Framework: Vite
+1. Push the repo to GitHub.
+2. Create a Cloudflare Pages project and connect the repository.
+3. Use:
    - Build command: `npm run build`
    - Output directory: `dist`
 4. Publish.
@@ -56,13 +56,13 @@ Use the same build command and output directory: `dist`.
 ## Important safeguards
 
 - Do not place confidential survivor information in public source files.
-- Do not publish unverified claims, statistics, names, or sensitive partnership data.
-- Treat secure case management and AI features as optional later phases, not part of the initial public launch.
+- Do not publish unverified claims, statistics, partner names, or sensitive details.
+- Treat secure case management, AI workflows, WhatsApp automation, and payment systems as later-phase features.
 
 ## Domain setup
 
-After deployment, connect your `.co.za` domain through your host provider and configure DNS records as instructed by the platform.
+Once deployed, point your `.co.za` domain to the static host using the provider’s DNS instructions.
 
 ## Notes
 
-This is intentionally a static starter website that can be expanded with a CMS or backend later. It keeps the public launch simple, editable, and affordable.
+This project is intentionally the public launch foundation only. It can be expanded later with a CMS, backend, or secure systems when those are ready.

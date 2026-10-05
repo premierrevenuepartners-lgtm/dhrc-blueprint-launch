@@ -1,94 +1,122 @@
 {
   "hero": {
-    "title": "A trauma-informed public platform for DHRC growth and trust.",
-    "lead": "The DHRC Master Blueprint 3.0 website is designed to communicate mission, services, and community commitment clearly while keeping sensitive information protected and public-facing content easy to manage.",
-    "primaryCta": "Start a conversation",
+    "title": "A trusted, public-facing home for DHRC growth and community visibility.",
+    "lead": "The DHRC Master Blueprint 3.0 is designed to communicate mission, services, and public commitment in a clear, respectful, trauma-informed way while keeping confidential survivor information protected and out of public systems.",
+    "primaryCta": "Get in touch",
     "secondaryCta": "Learn more",
     "commitments": [
       "Public website first",
-      "Simple content updates",
-      "Safe, responsible messaging",
+      "Content easy to update",
+      "Secure-by-design boundaries",
       "No fake claims or sensitive data"
+    ],
+    "panelTitle": "Built for launch, clarity, and future growth."
+  },
+  "stats": [
+    { "label": "Core", "value": "Public website" },
+    { "label": "Focus", "value": "Survivor-first" },
+    { "label": "Hosting", "value": "Free to start" },
+    { "label": "CMS", "value": "Editable content" }
+  ],
+  "mission": {
+    "heading": "A mission-driven website foundation for DHRC.",
+    "body": "This site helps DHRC present its organisational purpose, services, and values with confidence and professionalism. It gives the public a clear sense of what the organisation stands for while making it easy to keep sensitive operational information separate from public-facing communications.",
+    "bodyTwo": "The design is intentionally simple, flexible, and low-cost to maintain, making it suitable for a launch that can grow into a stronger digital presence over time without requiring a complicated technical stack in the first phase.",
+    "cardTitle": "What this website supports",
+    "points": [
+      "Clear public communication",
+      "Referral and contact pathways",
+      "Program visibility",
+      "Future expansion to secure services"
     ]
   },
-  "sections": {
-    "about": {
-      "heading": "A mission-driven website foundation for a safer, more visible DHRC presence.",
-      "body": "This site is structured to help DHRC present its values, purpose, and public programmes with clarity and professionalism. It is built to be launch-ready, easy to edit, and suitable for a free hosting workflow while protecting confidential and survivor-sensitive information from public exposure.",
-      "cardTitle": "What this website supports",
-      "points": [
-        "Clear public communications",
-        "Program and service visibility",
-        "Referral and contact pathways",
-        "Future expansion to secure services"
-      ]
-    },
-    "programs": {
-      "heading": "Service areas and public information pillars",
-      "items": [
-        {
-          "icon": "✦",
-          "title": "Prevention and awareness",
-          "description": "Educational resources and public messaging that raise awareness in a respectful, trauma-informed way."
-        },
-        {
-          "icon": "◎",
-          "title": "Case support pathways",
-          "description": "Clear referral and support guidance while keeping confidential care channels separate from public content."
-        },
-        {
-          "icon": "▣",
-          "title": "Community engagement",
-          "description": "A public-facing platform for partners, volunteers, and supporters to understand the mission and next steps."
-        },
-        {
-          "icon": "❖",
-          "title": "Capacity building",
-          "description": "Future-ready information architecture designed to support grants, partnerships, and operational scaling."
-        }
-      ]
-    },
-    "approach": {
-      "heading": "A practical, safe launch model",
-      "steps": [
-        {
-          "title": "Define the public message",
-          "text": "Keep the website focused on verified mission and public-facing information only. Avoid publishing confidential survivor details or sensitive operational claims."
-        },
-        {
-          "title": "Build a resilient structure",
-          "text": "Create content blocks, reusable sections, and clear navigation so updates remain fast and simple without affecting core functionality."
-        },
-        {
-          "title": "Prepare for launch",
-          "text": "Use a free hosting workflow, connect the domain later, and keep advanced secure services behind a separate protected layer."
-        }
-      ]
-    },
-    "resources": {
-      "heading": "Helpful starting points",
-      "items": [
-        {
-          "title": "Public information hub",
-          "description": "A central area for information about DHRC, service intentions, and public engagement opportunities.",
-          "link": "#about"
-        },
-        {
-          "title": "Referral guidance",
-          "description": "Public contact pathways that are clear, accountable, and designed with privacy-first principles.",
-          "link": "#contact"
-        },
-        {
-          "title": "Content governance",
-          "description": "A simple edit model so team members can update text and sections without technical complexity.",
-          "link": "#resources"
-        }
-      ]
-    }
+  "pillars": {
+    "heading": "Service areas and public information pillars",
+    "items": [
+      {
+        "icon": "✦",
+        "title": "Prevention and awareness",
+        "description": "Respectful public messaging that builds understanding and trust around DHRC’s mission and values."
+      },
+      {
+        "icon": "◎",
+        "title": "Case support pathways",
+        "description": "Clear signposting to support and referral processes while keeping confidential care channels protected."
+      },
+      {
+        "icon": "▣",
+        "title": "Community engagement",
+        "description": "A public-facing platform for supporters, partners, and volunteers to understand the organisation’s goals."
+      },
+      {
+        "icon": "❖",
+        "title": "Capacity building",
+        "description": "A foundation that can support future grant applications, operational growth, and website evolution."
+      }
+    ]
+  },
+  "approach": {
+    "heading": "A practical, safe launch model",
+    "steps": [
+      {
+        "title": "Define the public message",
+        "text": "Focus your website on verified mission, values, and public service information only. Avoid sharing private survivor information or unverified claims."
+      },
+      {
+        "title": "Build a resilient structure",
+        "text": "Create reusable content blocks, clean navigation, and clear writing so the team can maintain the site quickly and consistently."
+      },
+      {
+        "title": "Prepare for launch",
+        "text": "Use a free static hosting workflow, connect the domain later, and keep advanced secure systems behind separate protected infrastructure."
+      }
+    ]
+  },
+  "resources": {
+    "heading": "Helpful starting points",
+    "items": [
+      {
+        "title": "Public information hub",
+        "description": "A central, easy-to-read place for DHRC mission, values, and public engagement details.",
+        "link": "#about"
+      },
+      {
+        "title": "Referral guidance",
+        "description": "A clear, privacy-aware pathway for people to find help and contact the organisation appropriately.",
+        "link": "#contact"
+      },
+      {
+        "title": "Website governance",
+        "description": "Simple, maintainable content structure so updates are easy without technical complexity.",
+        "link": "#resources"
+      },
+      {
+        "title": "Future expansion",
+        "description": "A foundation that can later support secure systems, CMS options, and improved member or partner portals.",
+        "link": "#approach"
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Is this site meant for public launch only?",
+        "answer": "Yes. This is intentionally the public-facing foundation, not the secure internal case-management layer."
+      },
+      {
+        "question": "Can this be hosted for free?",
+        "answer": "Yes. The structure is designed for static deployment on free-tier hosting such as Cloudflare Pages, Netlify, or similar providers."
+      },
+      {
+        "question": "What should be kept out of public content?",
+        "answer": "No confidential survivor details, identifying records, unverified claims, sensitive case files, or operational information that should remain protected."
+      }
+    ]
   },
   "contact": {
     "heading": "Start the next phase with a trusted public launch",
-    "subheading": "Use this form as a simple placeholder for enquiries. Replace the mailto destination and any contact details with verified DHRC information later.",
+    "subheading": "Use this form as a placeholder for enquiries. Replace the mailto destination and all contact details with verified DHRC information before public launch.",
     "button": "Send enquiry"
   }
 }

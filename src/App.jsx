@@ -10,7 +10,7 @@ const navItems = [
 ];
 
 function App() {
-  const { hero, sections, contact } = content;
+  const { hero, stats, mission, pillars, approach, resources, faq, contact } = content;
 
   return (
     <div className="page-shell">
@@ -19,13 +19,15 @@ function App() {
           <a href="#home" className="brand" aria-label="DHRC home">
             <span className="brand-mark">DHRC</span>
           </a>
+
           <nav className="main-nav" aria-label="Main navigation">
             {navItems.map((item) => (
               <a key={item.href} href={item.href}>{item.label}</a>
             ))}
           </nav>
+
           <a href="#contact" className="button button-primary nav-cta">
-            Get in touch
+            {hero.primaryCta}
           </a>
         </div>
       </header>
@@ -37,6 +39,7 @@ function App() {
               <span className="eyebrow">DHRC Master Blueprint 3.0</span>
               <h1>{hero.title}</h1>
               <p>{hero.lead}</p>
+
               <div className="cta-row">
                 <a href="#contact" className="button button-primary">
                   {hero.primaryCta}
@@ -45,34 +48,26 @@ function App() {
                   {hero.secondaryCta}
                 </a>
               </div>
-              <ul className="trust-list" aria-label="Key public commitments">
+
+              <ul className="trust-list" aria-label="Key commitments">
                 {hero.commitments.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
             </div>
 
-            <div className="hero-panel" aria-label="DHRC project highlights">
+            <div className="hero-panel" aria-label="DHRC project snapshot">
               <div className="panel-card panel-card-highlight">
-                <span className="label">Public website foundation</span>
-                <h2>Built for launch, clarity, and easy updates.</h2>
+                <span className="label">Launch-ready structure</span>
+                <h2>{hero.panelTitle}</h2>
+
                 <div className="status-grid">
-                  <div>
-                    <strong>Core</strong>
-                    <span>Public website</span>
-                  </div>
-                  <div>
-                    <strong>Focus</strong>
-                    <span>Survivor-first</span>
-                  </div>
-                  <div>
-                    <strong>Hosting</strong>
-                    <span>Free to start</span>
-                  </div>
-                  <div>
-                    <strong>CMS</strong>
-                    <span>Content-driven</span>
-                  </div>
+                  {stats.map((stat) => (
+                    <div key={stat.label}>
+                      <strong>{stat.label}</strong>
+                      <span>{stat.value}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -81,18 +76,21 @@ function App() {
 
         <section className="section section-muted" id="about">
           <div className="container">
-            <div className="section-heading">
-              <span className="eyebrow">About DHRC</span>
-              <h2>{sections.about.heading}</h2>
+            <div className="section-heading center">
+              <span className="eyebrow">About</span>
+              <h2>{mission.heading}</h2>
             </div>
+
             <div className="two-column">
-              <div>
-                <p>{sections.about.body}</p>
+              <div className="story-box">
+                <p>{mission.body}</p>
+                <p>{mission.bodyTwo}</p>
               </div>
+
               <div className="info-card">
-                <h3>{sections.about.cardTitle}</h3>
+                <h3>{mission.cardTitle}</h3>
                 <ul>
-                  {sections.about.points.map((point) => (
+                  {mission.points.map((point) => (
                     <li key={point}>{point}</li>
                   ))}
                 </ul>
@@ -103,12 +101,13 @@ function App() {
 
         <section className="section" id="programs">
           <div className="container">
-            <div className="section-heading">
+            <div className="section-heading center">
               <span className="eyebrow">Programs</span>
-              <h2>{sections.programs.heading}</h2>
+              <h2>{pillars.heading}</h2>
             </div>
+
             <div className="card-grid">
-              {sections.programs.items.map((item) => (
+              {pillars.items.map((item) => (
                 <article key={item.title} className="feature-card">
                   <span className="feature-icon" aria-hidden="true">{item.icon}</span>
                   <h3>{item.title}</h3>
@@ -121,12 +120,13 @@ function App() {
 
         <section className="section section-muted" id="approach">
           <div className="container">
-            <div className="section-heading">
+            <div className="section-heading center">
               <span className="eyebrow">Approach</span>
-              <h2>{sections.approach.heading}</h2>
+              <h2>{approach.heading}</h2>
             </div>
+
             <div className="steps">
-              {sections.approach.steps.map((step, index) => (
+              {approach.steps.map((step, index) => (
                 <div key={step.title} className="step-item">
                   <span className="step-number">0{index + 1}</span>
                   <h3>{step.title}</h3>
@@ -139,17 +139,36 @@ function App() {
 
         <section className="section" id="resources">
           <div className="container">
-            <div className="section-heading">
+            <div className="section-heading center">
               <span className="eyebrow">Resources</span>
-              <h2>{sections.resources.heading}</h2>
+              <h2>{resources.heading}</h2>
             </div>
+
             <div className="resource-grid">
-              {sections.resources.items.map((item) => (
+              {resources.items.map((item) => (
                 <article key={item.title} className="resource-card">
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <a href={item.link}>Learn more</a>
                 </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-muted faq-section">
+          <div className="container faq-wrap">
+            <div className="section-heading center">
+              <span className="eyebrow">FAQ</span>
+              <h2>{faq.heading}</h2>
+            </div>
+
+            <div className="faq-list">
+              {faq.items.map((item) => (
+                <div key={item.question} className="faq-item">
+                  <h3>{item.question}</h3>
+                  <p>{item.answer}</p>
+                </div>
               ))}
             </div>
           </div>
